@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AuctionHouse</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#/!">AuctionHouse</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#/!">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!shop">Shops</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  The auctions
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#upcoming">Upcoming auctions</a>
+                  <a class="dropdown-item" href="#Bet">Bet now</a>
+                  <a class="dropdown-item" href="#">Auction results</a>
+                  <a class="dropdown-item" href="#">Future auctions</a>
+                  <a class="dropdown-item" href="#">Auction houses</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="">About</a>
+                <a class="dropdown-item" href="">Contact</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">SignUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div ng-view></div>
+      <!-- Body -->
+      <div class="content">
+        <h1>You can find everything <br> you need at <span style="color: var(--primary-color);font-weight:bold;"> AuctionHouse</span></h1>
+      </div>
+    
+      <div class="container mb-5 mt-5">
+          <h1 class="text-center" id="upcoming">Upcoming Auction</h1>
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="stepBox">
+                      <img src="/Asset/Crown.jpg" width="300px">
+                      <p>Katherine Henckel's Crown</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="stepBox">
+                      <img src="/Asset/Baseball-Card.jpg" width="250px">
+                  <p>Mark Zukerberg's Baseball Card</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="stepBox">
+                      <img src="/Asset/Space-Capsule.jpg" width="200px">
+                  <p>Space Capsule</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      <!-- Shops -->
+      <div class="container mb-5 mt-5">
+          <h1 class="text-center" id="Bet">Bet now</h1>
+      <div class="row">
+      <div class="col-lg-4">
+          <div class="stepBox">
+              <img src="/Asset/chén Đài Loan.jpg" width="200px">
+              <h3>Chén Đài Loan</h3>
+              <p></p>
+              <h6>$100.00</h6>
+              <button class="buy-1">Place bet</button>
+          </div>
+      </div>
+          <div class="col-lg-4">
+          <div class="stepBox">
+              <img src="/Asset/di-lac-ngoc-bich-vip-3-ok.jpg" width="200px">
+              <h3>Tượng Phật</h3>
+              <p></p>
+              <h6>$200.00</h6>
+              <button class="buy-2">Place bet</button>
+          </div>
+      </div>
+      <div class="col-lg-4">
+          <div class="stepBox">
+              <img src="/Asset/ly samurai Nhật Bản.jpg" width="200px" height="200px">
+              <h3>Ly samurai Nhật Bản</h3>
+              <p></p>
+              <h6>$50.00</h6>
+              <button class="buy-3">Place bet</button>
+          </div>
+      </div>
+      <div class="col-lg-4">
+          <div class="stepBox">
+              <img src="./Asset/mặt dây chuyền rồng đỏ Trung Quốc.jpg" width="200px">
+              <h3>Dây chuyền rồng</h3>
+              <p></p>
+              <h6>$500.00</h6>
+              <button class="buy-4">Place bet</button>
+          </div>
+      </div>
+    </div>
+    </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies policy</a></li>
+                <li><a href="#">Term of Service</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Bidding history</a></li>
+                <li><a href="#">Bidding status</a></li>
+                <li><a href="#">Payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>More</h4>
+              <ul>
+                <li><a routerLink="contact">Contact Us</a></li>
+                <li><a href="#">Want to sell?</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">&copy; AuctionHouse. All Rights Reserved</p>
+      </footer>
+<!-- AngularScript -->
+<script>
+    var app = angular.module("myApp",["ngRoute"])
+    app.config(function($routeProvider){
+        $routeProvider
+        .when("/",{templateUrl :"home.html"})
+        .when("/shop",{templateUrl :"shop.html"})
+    });
+</script>
+</body>
+</html>
