@@ -3,10 +3,10 @@
     text-decoration-color: red;
 }
 
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: #444444;
+body
+{
+    height: 100vh;
+font-family:"Audiowide",sans-serif;
 }
 
 a,
