@@ -5,3 +5,8 @@ input{
 a{
     margin-top:5px;
 }
+body
+{
+    height: 100vh;
+font-family:"Audiowide",sans-serif;
+}
